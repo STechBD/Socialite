@@ -1,0 +1,19 @@
+{
+    "name": "stechbd/socialite",
+    "description": "A WordPress plugin for social media connection.",
+    "type": "plugin",
+    "license": "STechBD",
+    "autoload": {
+        "psr-4": {
+            "Stechbd\\Socialite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Md. Ashraful Alam Shemul",
+            "email": "aashemul@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
