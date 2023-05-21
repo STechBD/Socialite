@@ -5,7 +5,7 @@
     "license": "STechBD",
     "autoload": {
         "psr-4": {
-            "Stechbd\\Socialite\\": "src/"
+            "STechBD\\Socialite\\": "src/"
         }
     },
     "authors": [
