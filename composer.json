@@ -3,15 +3,18 @@
     "description": "A WordPress plugin for social media connection.",
     "type": "plugin",
     "license": "STechBD",
-    "autoload": {
-        "psr-4": {
+    "autoload":
+    {
+        "psr-4":
+        {
             "STechBD\\Socialite\\": "src/"
         }
     },
-    "authors": [
+    "authors":
+    [
         {
             "name": "Md. Ashraful Alam Shemul",
-            "email": "aashemul@gmail.com"
+            "email": "aashemul@stechbd.net"
         }
     ],
     "minimum-stability": "stable",
