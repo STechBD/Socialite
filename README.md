@@ -56,3 +56,33 @@ For support or any inquiries, please contact our support team at support@sociali
 ```
 - Initial release
 ```
+
+## Statistics
+
+[![Downloads](https://img.shields.io/wordpress/plugin/dt/socialite.svg)](https://wordpress.org/plugins/socialite/)
+[![Rating](https://img.shields.io/wordpress/plugin/rating/socialite.svg)](https://wordpress.org/plugins/socialite/)
+[![Version](https://img.shields.io/wordpress/plugin/v/socialite.svg)](https://wordpress.org/plugins/socialite/)
+[![Active](https://img.shields.io/wordpress/plugin/installs/socialite.svg)](https://wordpress.org/plugins/socialite/)
+[![WordPress](https://img.shields.io/wordpress/v/socialite.svg)](https://wordpress.org/plugins/socialite/)
+[![Tested](https://img.shields.io/wordpress/v/socialite.svg)](https://wordpress.org/plugins/socialite/)
+[![PHP](https://img.shields.io/wordpress/v/socialite.svg)](https://wordpress.org/plugins/socialite/)
+[![License](https://img.shields.io/wordpress/license/socialite.svg)](https://wordpress.org/plugins/socialite/)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/your-username)
+
+## GitHub Statistics
+
+[![GitHub Issues](https://img.shields.io/github/issues/STechBD/Socialite.svg)]()
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/STechBD/Socialite.svg)]()
+[![GitHub Contributors](https://img.shields.io/github/contributors/STechBD/Socialite.svg)]()
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/STechBD/Socialite.svg)]()
+[![GitHub Stars](https://img.shields.io/github/stars/STechBD/Socialite.svg?style=social&label=Stars)]()
+[![GitHub Forks](https://img.shields.io/github/forks/STechBD/Socialite.svg?style=social&label=Fork)]()
+[![GitHub Watchers](https://img.shields.io/github/watchers/STechBD/Socialite.svg?style=social&label=Watch)]()
+
+## Used Languages
+
+[![HTML](https://img.shields.io/badge/HTML-5-blue.svg)]()
+[![CSS](https://img.shields.io/badge/CSS-3-blue.svg)]()
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-blue.svg)]()
+[![PHP](https://img.shields.io/badge/PHP-7-blue.svg)]()
+[![MySQL](https://img.shields.io/badge/MySQL-5-blue.svg)]()
