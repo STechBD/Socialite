@@ -2,13 +2,18 @@
 
 
 /**
- * Plugin Name: Socialite
+ * Plugin Name: Socialite by STechBD.Net
  * Plugin URI: https://project.stechbd.net/socialite/
  * Description: Socialite is a powerful WordPress plugin that allows users to integrate social media login, sharing buttons, Facebook comments, and a messenger floating button into their WordPress websites. It provides seamless integration with popular social media platforms like Facebook, Twitter, and Google, making it easy for users to log in, share content, and engage with their audience.
  * Version: 1.0.0
  * Version Code: 1
- * Author: Md. Ashraful Alam Shemul
- * Author URI: https://www.aashemul.com
+ * Author: S Technologies Limited
+ * Author URI: https://www.stechbd.net
+ * Requires at least: 5.0.0
+ * Tested up to: 6.2.2
+ * Requires PHP: 8.0
+ * Created: May 23, 2023
+ * Updated: May 26, 2023
  * Text Domain: stechbd-socialite
  * Domain Path: /languages
  * License: MIT
@@ -28,13 +33,19 @@ if(!defined('STECHBD_SOCIALITE_VERSION'))
 }
 
 // Define the plugin path.
-if(!defined('STECHBD_SOCIALITE_PLUGIN_DIR'))
+if(!defined('STECHBD_SOCIALITE_PLUGIN'))
 {
-	define('STECHBD_SOCIALITE_PLUGIN_DIR', plugin_dir_path(__FILE__));
+	define('STECHBD_SOCIALITE_PLUGIN', plugin_dir_path(__FILE__));
+}
+
+// Define the include path.
+if(!defined('STECHBD_SOCIALITE_INC'))
+{
+	define('STECHBD_SOCIALITE_INC', STECHBD_SOCIALITE_PLUGIN . 'includes/');
 }
 
 // Include the main plugin class.
-require_once STECHBD_SOCIALITE_PLUGIN_DIR . 'includes/class-stechbd-socialite.php';
+require_once STECHBD_SOCIALITE_INC . 'class-stechbd-socialite.php';
 
 // Register activation and deactivation hooks.
 register_activation_hook(__FILE__, array('Socialite', 'activate'));
