@@ -9,14 +9,8 @@
  * Version Code: 1
  * Author: S Technologies Limited
  * Author URI: https://www.stechbd.net
- * Requires at least: 5.0.0
- * Tested up to: 6.2.2
- * Requires PHP: 8.0
  * Created: May 26, 2023
  * Updated: May 26, 2023
- * Text Domain: stechbd-socialite
- * Domain Path: /languages
- * License: MIT
  */
 
 
@@ -26,6 +20,10 @@
 
 class Socialite
 {
+	public object $facebook;
+	public object $twitter;
+	public object $google;
+
 	/**
 	 * Plugin activation hook.
 	 * @return bool
@@ -65,8 +63,10 @@ class Socialite
 	{
 		// Include necessary files or load required classes.
 		// Example:
-		// require_once SOCIALITE_PLUGIN_DIR . 'includes/class-some-dependency.php';
+		// require_once STECHBD_SOCIALITE_INC . 'class-some-dependency.php';
 		// $some_dependency = new Some_Dependency();
+
+		require_once STECHBD_SOCIALITE_INC . 'login.class.php';
 	}
 
 	/**
