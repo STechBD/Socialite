@@ -15,7 +15,7 @@
 
 
 /**
- * The main login class file.
+ * The login class file.
  */
 
 class Login
