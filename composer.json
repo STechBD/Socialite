@@ -20,6 +20,12 @@
     "minimum-stability": "stable",
     "require-dev":
     {
+        "roave/security-advisories": "dev-latest"
+        ,
         "phpunit/phpunit": "^10.1"
+    },
+    "require":
+    {
+        "facebook/graph-sdk": "^5.1"
     }
 }
