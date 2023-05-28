@@ -21,6 +21,29 @@ namespace Socialite;
 
 class Database
 {
+	public static function install(): bool
+	{
+		global $wpdb;
+
+		$table_name = $wpdb->prefix . 'socialite_provider';
+
+		$sql = 'CREATE TABLE ' . $table_name . '
+		(
+			id INT (11) NOT NULL AUTO_INCREMENT,
+			name VARCHAR (255) NOT NULL,
+			app_id VARCHAR (255) NOT NULL,
+			app_secret VARCHAR (255) NOT NULL,
+			status VARCHAR (1) NOT NULL DEFAULT `0`,
+			PRIMARY KEY (id)
+		)';
+
+		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+
+		dbDelta($sql);
+
+		return true;
+	}
+
 	/**
 	 * @param string $name
 	 * @return string|bool
