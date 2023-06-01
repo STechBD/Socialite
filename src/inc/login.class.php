@@ -50,12 +50,11 @@ class Login
 	}
 
 	/**
-	 * @return void
+	 * @return string
 	 * @throws \Facebook\Exceptions\FacebookSDKException
 	 */
-	private function facebook(): void
+	private function facebook(): string
 	{
-
 		$fb = new \Facebook\Facebook(
 		[
 			'app_id' => '{app-id}',
@@ -90,7 +89,7 @@ class Login
 		}
 
 		$me = $response->getGraphUser();
-		echo 'Logged in as ' . $me->getName();
+		return $me->getName();
 	}
 
 	private function twitter(): void
