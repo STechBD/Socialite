@@ -27,7 +27,7 @@ class Database
 
 		$table_name = $wpdb->prefix . 'socialite_provider';
 
-		$sql = 'CREATE TABLE ' . $table_name . '
+		$sql = 'CREATE TABLE IF NOT EXISTS ' . $table_name . '
 		(
 			id INT (11) NOT NULL AUTO_INCREMENT,
 			name VARCHAR (255) NOT NULL,

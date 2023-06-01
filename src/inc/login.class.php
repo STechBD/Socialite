@@ -23,13 +23,15 @@
 
 namespace Socialite;
 
+use Facebook\Exceptions\FacebookSDKException;
+
 class Login
 {
 	public string $type;
 
 	/**
 	 * @param string $type
-	 * @throws \Facebook\Exceptions\FacebookSDKException
+	 * @throws FacebookSDKException
 	 */
 	public function __construct(string $type)
 	{
@@ -51,7 +53,7 @@ class Login
 
 	/**
 	 * @return string
-	 * @throws \Facebook\Exceptions\FacebookSDKException
+	 * @throws FacebookSDKException
 	 */
 	private function facebook(): string
 	{
@@ -81,7 +83,7 @@ class Login
 			echo 'Graph returned an error: ' . $e->getMessage();
 			exit;
 		}
-		catch(\Facebook\Exceptions\FacebookSDKException $e)
+		catch(FacebookSDKException $e)
 		{
 			// When validation fails or other local issues
 			echo 'Facebook SDK returned an error: ' . $e->getMessage();
